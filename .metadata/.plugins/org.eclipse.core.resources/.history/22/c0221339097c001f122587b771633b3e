@@ -1,0 +1,11 @@
+package practice;
+
+public class LargestNumberInArray {
+	
+	public static void main(String args[]) {
+		
+		int[] largNumber = {1,5,10,15,18,20};
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package practice;
+
+public class Anagram1 {
+	
+	public static void main(String args[]) {
+		
+		String str1 = "listen";
+		String str2 = "silent";
+		
+		for(int i=0;i<str1.length();i++) {
+			
+			
+		}
+	}
+
+}

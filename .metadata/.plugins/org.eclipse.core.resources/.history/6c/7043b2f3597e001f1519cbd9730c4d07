@@ -1,0 +1,11 @@
+package practice;
+
+public class MissingNumberInArray {
+	
+	public static void main(String args[]) {
+		int[] missing = {1,2,4,5};
+		
+		
+	}
+
+}

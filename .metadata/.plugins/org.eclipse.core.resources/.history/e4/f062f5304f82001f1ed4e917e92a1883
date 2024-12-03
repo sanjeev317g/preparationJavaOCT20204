@@ -1,0 +1,25 @@
+package practice;
+
+public class OutInPut {
+	
+	public static void main(String args[]) {
+		
+		String input = "32400121200";
+		
+		String zeros = " ";
+		
+		String str1 = " ";
+		
+		String str2 = " ";
+		
+		for(char c: input.toCharArray()) {
+			if(c == 0) {
+				zeros = zeros+c;
+			}
+		}
+		
+		
+
+	}
+
+}

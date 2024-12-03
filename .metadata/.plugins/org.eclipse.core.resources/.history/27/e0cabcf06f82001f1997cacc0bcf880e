@@ -1,0 +1,23 @@
+package practice;
+
+public class OutInPut {
+	
+	public static void main(String args[]) {
+		
+		String input = "32400121200";
+		
+		int zeroCount = 0;
+		
+
+		
+		for(char c: input.toCharArray()) {
+			if(c == 0) {
+				zeroCount++;
+			}
+		}
+		
+		
+
+	}
+
+}

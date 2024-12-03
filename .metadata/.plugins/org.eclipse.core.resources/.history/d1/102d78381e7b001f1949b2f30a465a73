@@ -1,0 +1,12 @@
+package practice;
+
+public class ReverseString {
+	
+	public static void main(String args[]) {
+		String str = "PeopleTech";
+		StringBuilder strb = new StringBuilder(str);
+		System.out.println(strb.reverse());
+		
+	}
+
+}

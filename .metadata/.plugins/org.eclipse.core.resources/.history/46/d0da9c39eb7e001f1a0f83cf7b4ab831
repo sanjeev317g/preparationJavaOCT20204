@@ -1,0 +1,9 @@
+package practice;
+
+public class CheckStringIsEmpty {
+	
+	public static void main(String args[]) {
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package practice;
+
+public class OutInPut {
+	
+	public static void main(String args[]) {
+		
+		String input = "32400121200";
+
+	}
+
+}

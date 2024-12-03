@@ -1,0 +1,10 @@
+package com.Max;
+
+public class MaxNumber {
+	public static void main(String[] args) {
+		int a[] = {1,2,3,5,7,10,12,15};
+		
+		
+	}
+
+}

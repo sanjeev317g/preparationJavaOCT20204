@@ -1,0 +1,52 @@
+package practice;
+
+public class Anagram {
+	
+	public static void main(String args[]) {
+		String str = "List en";
+		String str2 = "Silent";
+		public static StringBuilder spaces = new StringBuilder();
+		
+
+		System.out.println("LoweCase, Remove Spaces :" + spaces);
+		
+		//Get the Character Count 
+
+		// print the character from the array
+		//System.out.println(charCount);
+		for(int i=0;i<=charCount.length;i++) {
+			System.out.println(charCount[i]);
+		}
+		
+	}
+	
+	public static StringBuilder removeSpace(String str) {
+
+		
+		for(int i=0;i<str.length();i++) {
+			char c = str.charAt(i);
+			if(c != ' ') {
+				spaces.append(c);
+			}
+		}
+		return spaces;
+	}
+	
+	public static String loweCase(String str) {
+		
+		String str1 = str.toLowerCase();
+		
+		return str1;
+	}
+	
+	public static int[] charCount(StringBuilder strB) {
+		int charCount[] = new int[26];
+		for(int i=0;i <spaces.length();i++) {
+			charCount[spaces.charAt(i) - 'a']++;
+		}
+		
+		
+		return charCount;
+	}
+
+}

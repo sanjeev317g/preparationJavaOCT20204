@@ -1,0 +1,19 @@
+package practice1;
+
+public class SwapTwoNumbers {
+	
+	public static void main(String args[]) {
+		
+		//Swap two numbers
+		int a = 10;
+		int b = 20;
+		
+		a = a + b;
+		b = b - a;
+		
+		a = a - b;
+		
+		System.out.println("a was 10 " + a+ " "+ "b was 20"+ b);
+	}
+
+}

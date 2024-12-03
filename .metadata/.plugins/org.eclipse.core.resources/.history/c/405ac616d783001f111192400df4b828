@@ -1,0 +1,9 @@
+package practice;
+
+public class InputAndOutPut {
+	
+	public static void main(String args[]) {
+		
+	}
+
+}

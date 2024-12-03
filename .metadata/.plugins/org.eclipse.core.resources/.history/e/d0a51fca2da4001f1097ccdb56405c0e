@@ -1,0 +1,34 @@
+package com.Min;
+
+public class AnimalCat extends Aimal{
+	
+	static int hight = 10;
+	AnimalCat(){
+		
+		super();
+		System.out.println("Child class Constructor");
+	}
+	
+	public static String drink() {
+		String drinks = "Milk";
+		return drinks;
+//		super();
+	}
+	
+	public static int hight() {
+		
+		try {
+			return hight;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return hight();
+		}
+	}
+	
+	public static void main (String args[]) {
+//		AnimalCat am  = new AnimalCat();
+//		super();
+	}
+
+}

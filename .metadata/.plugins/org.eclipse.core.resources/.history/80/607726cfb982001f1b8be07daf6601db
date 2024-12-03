@@ -1,0 +1,19 @@
+package practice;
+
+public class StringOutPut {
+	
+	public static void main(String args[]) {
+		
+		// aabbccdd out a2b2c2d2
+		
+		String str = "aabbccdd";
+		
+		char[] c = str.toCharArray();
+		
+		StringBuffer sb = new StringBuffer();
+		
+
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package OCT26;
+
+public class Anagram {
+	
+	public static void main(String args[]) {
+		
+		String str1 = "Listen";
+		String str2 = "Silent";
+		
+		if(str1.toLowerCase().length() == str2.toLowerCase().length()) {
+			System.out.println("Anagram first condition satisfied");
+		}
+		else {
+			System.out.println("Not an Anagram");
+		}
+		
+		StringBuffer sb = new StringBuffer();
+		
+		for(int i=0;i<str1.length();i++) {
+			for(int j=0;j<str2.length();j++) {
+				char[] str11 = str1.toCharArray();
+				char[] str22 = str2.toCharArray();
+				
+				if(str11[i] == str22[j]) {
+					sb.append(str22[j]);
+				}
+			}
+		}
+		
+		System.out.println(sb);
+		
+		
+	}
+
+}

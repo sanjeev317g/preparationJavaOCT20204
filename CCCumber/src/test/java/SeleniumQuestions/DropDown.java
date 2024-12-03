@@ -1,0 +1,31 @@
+package SeleniumQuestions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+import java.util.List;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.support.ui.Select;
+
+public class DropDown {
+	
+	public static void main(String args[]) {
+		
+		WebDriverManager.chromedriver().setup();
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://demoqa.com/");
+		
+		WebElement ddown = driver.findElement(By.cssSelector("#dropdowm-menu-1"));
+//		Select select = new Select((WebElement) ddown);
+		Select select = new Select(ddown);
+		List<WebElement> allOptions = select.getOptions();
+		for(WebElement list_elements :allOptions) {
+			System.out.println(list_elements.getText());
+		}
+		
+	}
+
+}

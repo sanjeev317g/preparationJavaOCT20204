@@ -1,0 +1,33 @@
+package practice;
+
+public class ReverseString {
+	static String str = "PeopleTech";
+	private char c;
+	public static void main(String args[]) {
+//		String str = "PeopleTech";
+		StringBuilder strb = new StringBuilder(str);
+		System.out.println(strb.reverse());
+		
+		System.out.println(strb.append("pvt"));
+		
+		System.out.println(strb.insert(0, "HMMM"));
+		
+		System.out.println(strb.delete(0, 1));
+		
+		System.out.println(strb.replace(0, 1, "replaced"));
+		
+	}
+	
+	public void reverse() {
+		
+		char[] rr = str.toCharArray();
+		char c = 0;
+		for(char i=0;i<=str.length();i--) {
+			c = rr[i];
+			
+		}
+		System.out.println(c);
+		
+	}
+
+}

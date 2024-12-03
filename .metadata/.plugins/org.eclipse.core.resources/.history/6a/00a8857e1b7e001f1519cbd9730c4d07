@@ -1,0 +1,13 @@
+package practice;
+
+public class ReverseNumber {
+	
+	public static void main(String args[]) {
+		int number = 12345;
+		
+		for(int i=Integer.toString(number).length();i>0;i--) {
+			System.out.println(i);
+		}
+	}
+
+}

@@ -1,0 +1,92 @@
+package practice;
+
+public class palindromeNumber1 {
+	
+	public class ReverseNumber {
+	    public static void main(String[] args) {
+	        int number = 12345;  // Change this number to test other cases
+	        int reversed = reverseNumber(number);
+	        System.out.println("Original Number: " + number);
+	        System.out.println("Reversed Number: " + reversed);
+	    }
+
+	    // Method to reverse a number
+	    public static int reverseNumber(int num) {
+	        int reversed = 0;
+
+	        // Reverse the number
+	        while (num != 0) {
+	            int digit = num % 10;  // Extract the last digit
+	            reversed = reversed * 10 + digit;  // Add the digit to the reversed number
+	            num /= 10;  // Remove the last digit from the number
+	        }
+
+	        return reversed;
+	    }
+	}
+	Explanation:
+	Extract the last digit: Use num % 10 to get the last digit of the number.
+	Build the reversed number: Multiply reversed by 10 and add the extracted digit.
+	Remove the last digit: Divide the number by 10 (num /= 10) to remove the last digit.
+	Repeat the process until the original number becomes 0.
+	Example Output:
+	javascript
+	Copy code
+	Original Number: 12345
+	Reversed Number: 54321
+	Explanation with an Example:
+	For the input 12345:
+	First iteration: last digit = 5, reversed = 5, remaining number = 1234
+	Second iteration: last digit = 4, reversed = 54, remaining number = 123
+	Third iteration: last digit = 3, reversed = 543, remaining number = 12
+	Fourth iteration: last digit = 2, reversed = 5432, remaining number = 1
+	Fifth iteration: last digit = 1, reversed = 54321, remaining number = 0
+	At the end, the reversed number is 54321.
+
+	Handling Negative Numbers:
+	To reverse a negative number, you can check if the number is negative and handle it accordingly.
+
+	java
+	Copy code
+	public class ReverseNumberWithNegative {
+	    public static void main(String[] args) {
+	        int number = -12345;  // Test with a negative number
+	        int reversed = reverseNumber(number);
+	        System.out.println("Original Number: " + number);
+	        System.out.println("Reversed Number: " + reversed);
+	    }
+
+	    // Method to reverse a number with support for negative numbers
+	    public static int reverseNumber(int num) {
+	        boolean isNegative = num < 0;
+	        num = Math.abs(num);  // Convert to positive for reversing
+
+	        int reversed = 0;
+	        while (num != 0) {
+	            int digit = num % 10;
+	            reversed = reversed * 10 + digit;
+	            num /= 10;
+	        }
+
+	        return isNegative ? -reversed : reversed;
+	    }
+	}
+	Output for a Negative Number:
+	javascript
+	Copy code
+	Original Number: -12345
+	Reversed Number: -54321
+	Conclusion:
+	This approach efficiently reverses both positive and negative numbers by extracting digits and constructing the reversed number. The time complexity is O(d), where d is the number of digits in the number.
+
+
+
+
+
+
+
+
+
+
+
+}

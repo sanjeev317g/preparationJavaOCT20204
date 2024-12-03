@@ -1,0 +1,16 @@
+package practice;
+
+public class palindromeNumber {
+	
+	public static void main(String args[]) {
+		
+		String str = "ABBA";
+		String str1 = "";
+		StringBuffer sb = new StringBuffer(str);
+		if(str == sb.reverse().toString()) {
+			System.out.println("its word palindrome");
+		}
+		
+	}
+
+}

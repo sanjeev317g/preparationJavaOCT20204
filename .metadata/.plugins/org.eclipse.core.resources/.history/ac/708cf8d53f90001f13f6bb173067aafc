@@ -1,0 +1,9 @@
+package PracticePackage;
+
+public class LaunchApplication {
+	
+	public static void main(String args[]) {
+		
+	}
+
+}

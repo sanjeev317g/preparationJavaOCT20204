@@ -1,0 +1,44 @@
+package PracticePackage;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.support.ui.Select;
+
+public class SCrollthePage {
+	
+	public static void main (String args[]) {
+		
+		WebDriverManager.chromedriver().setup();
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.webdriveruniversity.com/");
+		
+		driver.manage().window().maximize();
+		
+		WebElement element = driver.findElement(By.xpath("//h1[contains(text(),'DROPDOWN, CHECKBOXE(S) & RADIO BUTTON(S)')]"));
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true)", element);
+		
+		WebElement element1 = driver.findElement(By.xpath("//body/div[1]/div[1]/div[2]/div[7]/a[1]/div[1]/div[2]"));
+		element1.click();
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+		
+		
+		WebElement ddown = driver.findElement(By.xpath("\"//select[@id='dropdowm-menu-1']\""));
+		Select select = new Select(ddown);
+		
+		List<WebElement> dropdown = driver.findElements(By.xpath(ddown));
+		System.out.println("List of dropdown Elements" + dropdown);
+		
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package practice7;
+
+public class primeNumber {
+	
+	public static void main(String args[]) {
+		System.out.println(prime(99));
+	}
+	
+	public static boolean prime(int number) {
+		
+		
+		for(int i = 2; i< number; i++)
+			if(number % i == 0)
+				return false;
+		return true;
+		
+	}
+
+}

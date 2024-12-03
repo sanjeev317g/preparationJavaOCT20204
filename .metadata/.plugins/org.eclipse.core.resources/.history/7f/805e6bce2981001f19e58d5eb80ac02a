@@ -1,0 +1,30 @@
+package practice1;
+
+public class ArmstrongNumber {
+	
+	public static void main(String args[]) {
+		
+		int number = 153;
+		
+		String number_String = Integer.toString(number);
+		
+		int ArmsNo = 0;
+		
+		int total = 0;
+		
+		int total1 = 0;
+		
+		for (int i=1;i <=number_String.length(); i++) {
+			
+			ArmsNo = number % 10;
+			
+			total  = (int) Math.pow(ArmsNo, number_String.length());
+			
+			total1 = total + total1;
+			
+		}
+		
+		System.out.println(total1);
+	}
+
+}

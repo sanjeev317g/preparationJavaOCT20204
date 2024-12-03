@@ -1,0 +1,11 @@
+package com.selenium.StepDefination;
+import cucumber.api.java.en.When;
+
+public class Login {
+	
+	@Given("^User is in Login Page$")
+	public void User_is_in_Login_Page() {
+		
+	}
+
+}

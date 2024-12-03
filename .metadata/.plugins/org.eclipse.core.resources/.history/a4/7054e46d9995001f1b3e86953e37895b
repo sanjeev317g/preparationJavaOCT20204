@@ -1,0 +1,10 @@
+package OCT26;
+
+public class CountRepetativeDigits {
+	
+	public static void main (String args[]) {
+		
+		
+	}
+
+}

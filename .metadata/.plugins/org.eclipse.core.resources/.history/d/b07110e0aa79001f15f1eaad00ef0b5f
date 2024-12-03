@@ -1,0 +1,9 @@
+package com.Min;
+
+public class Dog extends Aimal {
+	
+	public static void main(String args[]) {
+		
+	}
+
+}

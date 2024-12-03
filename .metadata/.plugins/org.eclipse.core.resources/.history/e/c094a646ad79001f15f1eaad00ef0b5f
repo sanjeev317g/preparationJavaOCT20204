@@ -1,0 +1,22 @@
+package com.Min;
+
+public class Encapsulation {
+	
+	private String name = "Donal";
+	private int age = 65;
+	
+	public String getName(String name) {
+		return name;
+	}
+	
+	public int getAe(int age) {
+		return age;
+	}
+	
+	public String setName(String name) {
+		this.name = name;
+		return name;
+	}
+	
+
+}

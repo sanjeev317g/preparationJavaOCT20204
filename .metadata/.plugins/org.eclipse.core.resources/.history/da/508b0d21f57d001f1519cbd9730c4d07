@@ -1,0 +1,16 @@
+package practice;
+
+public class ArmstrongNumber {
+	
+	public static void main(String args[]) {
+	
+	int armstrong = 12345;
+	String armstrong_length = Integer.toString(armstrong).length(); 
+	while(armstrong != 0) {
+		int lastdigit = armstrong % 10; //extract last digit
+		
+	}
+	
+	
+	}
+}

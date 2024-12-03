@@ -1,0 +1,15 @@
+package practice;
+
+public class OccurencesOfCharactersInString {
+	
+	public static void main(String args[]) {
+		
+		String str = "Automation";
+		str = str.toLowerCase();
+		
+		char[] cStr = str.toCharArray();
+		
+		
+	}
+
+}

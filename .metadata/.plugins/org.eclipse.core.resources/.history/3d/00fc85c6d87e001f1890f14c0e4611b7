@@ -1,0 +1,22 @@
+package practice;
+
+public class PerfectNumber {
+	
+	public static void main(String args[]) {
+		
+		int number = 6;
+		int sum = 0;
+		System.out.print ("Print divisiable :");
+		for(int i=1;i<number;i++) {
+			if(number % i == 0) {
+				
+				sum = sum + i;
+				
+				System.out.print(3);
+			}
+		}
+		
+		System.out.println(sum);
+	}
+
+}

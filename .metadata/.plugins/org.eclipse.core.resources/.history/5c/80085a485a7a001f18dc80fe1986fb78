@@ -1,0 +1,22 @@
+package com.Min;
+
+public class AnimalCat {
+	
+	String hight = "10.10inch";
+	
+	
+	public static String drink() {
+		String drinks = "Milk";
+		return drinks;
+	}
+	
+	public static int hight() {
+		try {
+			return hight;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

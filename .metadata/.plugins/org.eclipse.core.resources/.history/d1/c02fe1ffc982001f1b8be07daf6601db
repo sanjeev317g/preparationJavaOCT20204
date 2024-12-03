@@ -1,0 +1,24 @@
+package practice;
+
+public class OvelsConsonents {
+	
+	public static void main(String args[]) {
+		
+		String str = "Automation";
+		
+		int vovels = 0;
+		
+		int consonents = 0;
+		
+		for(char c:str.toCharArray()) {
+			
+			if(c == 'a' || c == 'e' || c== 'i' || c=='o'|| c=='u') {
+				vovels++;
+			}
+			else {
+				consonents++;
+			}
+		}
+	}
+
+}

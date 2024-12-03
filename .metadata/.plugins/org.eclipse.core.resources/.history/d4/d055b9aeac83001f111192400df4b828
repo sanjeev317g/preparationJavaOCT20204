@@ -1,0 +1,9 @@
+package practice;
+
+public class CommonElementTwo {
+	
+	public static void main(String args[]) {
+		
+	}
+
+}

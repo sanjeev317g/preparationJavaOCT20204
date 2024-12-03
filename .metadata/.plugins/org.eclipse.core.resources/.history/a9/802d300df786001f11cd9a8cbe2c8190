@@ -1,0 +1,16 @@
+package com.selenium.StepDefination;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Login {
+	
+	@Given("^User is in Login Page$")
+	public void User_is_in_Login_Page() {
+		
+		System.setProperty("webdriver.chrome.driver", null);
+		
+	}
+
+}

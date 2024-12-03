@@ -1,0 +1,26 @@
+package OCT26;
+
+public class FirstNoneRepetativechar {
+	
+	public static void main(String args[]) {
+		
+		String str = "Automation";
+		String str_modified  = str.toLowerCase();
+		char[]char_string = str_modified.toCharArray();
+		StringBuffer sb = new StringBuffer();
+		
+		for(int i = 0;i<str.length();i++) {
+			for(int j = 1 ;j<str.length();j++) {
+				if(char_string[i] == char_string[j]) {
+					
+				}
+				else {
+					System.out.println(char_string[j]);
+					sb.append(char_string[j]);
+				}
+			}
+		}
+		System.out.println(sb);
+	}
+
+}

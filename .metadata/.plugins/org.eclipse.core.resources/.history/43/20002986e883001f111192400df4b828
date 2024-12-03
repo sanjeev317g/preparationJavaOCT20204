@@ -1,0 +1,25 @@
+package practice;
+
+public class CountIntegersfromSpecialChar {
+	
+	public static void main(String args[]) {
+		
+		String[] str = {"1", "4", "a"};
+		
+		int sum = 0;
+		
+		for(int i=0;i<str.length;i++) {
+			try {
+			
+			sum = sum + Integer.parseInt(str[i]);
+			}catch(NumberFormatException e) {
+				
+			}
+				
+			
+		}
+		
+		System.out.println(sum);
+	}
+
+}

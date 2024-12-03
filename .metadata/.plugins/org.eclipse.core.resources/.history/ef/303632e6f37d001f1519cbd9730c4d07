@@ -1,0 +1,9 @@
+package practice;
+
+public class ArmstrongNumber {
+	
+	int armstrong = 12345;
+	String armstromg_ste = String.valueOf(armstrong);
+	
+
+}

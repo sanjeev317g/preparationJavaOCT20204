@@ -1,0 +1,13 @@
+package OCT26;
+
+public class SeperateCharAndDigits {
+	
+	public static void main(String args[]) {
+		
+		String str = "Test123";
+		
+		
+		
+	}
+
+}

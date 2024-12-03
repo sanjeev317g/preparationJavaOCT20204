@@ -1,0 +1,12 @@
+package practice;
+
+public class swapTwoStrings {
+	
+	public static void main(String args[]) {
+		
+		String automation = "Automation";
+		
+		String mannual = "Manual";
+	}
+
+}

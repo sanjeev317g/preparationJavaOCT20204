@@ -1,0 +1,94 @@
+package practice;
+
+public class ReverseString {
+	static String str = "PeopleTech";
+	private char c;
+	public static void main(String args[]) {
+//		String str = "PeopleTech";
+		StringBuilder strb = new StringBuilder(str);
+		System.out.println(strb.reverse());
+		
+		System.out.println(strb.append("pvt"));
+		
+		System.out.println(strb.insert(0, "HMMM"));
+		
+		System.out.println(strb.delete(0, 1));
+		
+		System.out.println(strb.replace(0, 1, "replaced"));
+		
+		reverse();
+		
+		ReverseString rs = new ReverseString();
+		rs.reverse1();
+		
+		reverse2();
+		
+		reverse3();
+		
+		reverse4();
+	}
+	
+	public static void reverse() {
+		
+		char[] rr = str.toCharArray();
+		String s = "";
+		char c = 0;
+		for(int i=rr.length -1 ;i>=0;i--) {	
+			s += rr[i];
+		}
+		System.out.println(s);
+		
+	}
+	
+	public void reverse1() {
+		String str = "MovewithNextCompany";
+		String prints = "";
+		char[] cstring = str.toCharArray();
+		
+		for(int i = cstring.length-1;i>=0;i--) {
+			
+			prints += cstring[i];
+		}
+		
+		System.out.println("ssss" + prints);
+	}
+	
+	public static void reverse2() {
+		String str = "Dell";
+		
+		char[] c = str.toCharArray();
+		
+		String str1 = "";
+		
+		for(int i=str.length()-1; i>=0;i--) {
+			str1 += c[i];
+		}
+		System.out.println(str1);
+	}
+	
+	public static void reverse3() {
+		String str = "hyd";
+		
+		char[] a = str.toCharArray();
+		String s = "";
+		for(int i=str.length()-1;i>=0;i--)
+		{
+			s += a[i];
+		}
+		
+		System.out.println(s);
+	}
+	
+	public static void reverse4() {
+		String str = "Man";
+		char[] ss = str.toCharArray();
+		String str1 = "";
+		for(int i=ss.length-1;i>=0;i--) {
+			str1 += ss[i];
+			
+		}
+		
+		System.out.println(str1);
+	}
+
+}

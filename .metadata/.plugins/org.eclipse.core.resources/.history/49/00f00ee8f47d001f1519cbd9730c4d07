@@ -1,0 +1,11 @@
+package practice;
+
+public class ArmstrongNumber {
+	
+	public static void main(String args[]) {
+	
+	int armstrong = 12345;
+
+	
+	}
+}

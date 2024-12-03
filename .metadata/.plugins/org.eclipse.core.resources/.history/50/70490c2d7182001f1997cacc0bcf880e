@@ -1,0 +1,33 @@
+package practice;
+
+public class OutInPut {
+	
+	public static void main(String args[]) {
+		
+		
+		String input = "32400121200";
+		
+		int zeroCount = 0;
+		
+		StringBuffer bf = new StringBuffer();
+		StringBuffer bf1 = new StringBuffer();
+		
+		for(char c: input.toCharArray()) {
+			if(c == '0') {
+				zeroCount = zeroCount +1;
+				bf.append(c);
+			}
+			else {
+				bf1.append(c);
+			}
+		}
+		
+		bf.append(bf1);
+		
+		System.out.println(bf);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package OCT26;
+
+public class ArmstrongNumber {
+	
+	public static void main(String args[]) {
+		
+		int num = 153;
+		
+		int length = Integer.toString(num).length();
+		
+		int count = 0;
+		
+		while(num !=0) {
+			
+			int lnumber = 153 % 10;
+			
+			for(int i=0;i<lnumber;i++) {
+				count = lnumber + count;
+			}
+			
+			
+		}
+		
+		System.out.println(count);
+		
+	}
+
+}

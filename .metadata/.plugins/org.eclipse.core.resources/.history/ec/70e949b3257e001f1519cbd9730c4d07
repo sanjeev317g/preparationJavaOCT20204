@@ -1,0 +1,39 @@
+package practice;
+
+public class Anagram {
+	String str = "List en";
+	String str2 = "Silent";
+	static StringBuilder spaces = new StringBuilder();
+	
+	public static void main(String args[]) {
+
+	}
+	
+	public static StringBuilder removeSpace(String str) {
+		for(int i=0;i<str.length();i++) {
+			char c = str.charAt(i);
+			if(c != ' ') {
+				spaces.append(c);
+			}
+		}
+		return spaces;
+	}
+	
+	public static String loweCase(String str) {
+		
+		String str1 = str.toLowerCase();
+		
+		return str1;
+	}
+	
+	public static int[] charCount(StringBuilder strB) {
+		int charCount[] = new int[26];
+		for(int i=0;i <spaces.length();i++) {
+			charCount[spaces.charAt(i) - 'a']++;
+		}
+		
+		
+		return charCount;
+	}
+
+}

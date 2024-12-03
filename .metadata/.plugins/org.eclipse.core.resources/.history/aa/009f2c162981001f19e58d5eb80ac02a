@@ -1,0 +1,22 @@
+package practice1;
+
+public class ArmstrongNumber {
+	
+	public static void main(String args[]) {
+		
+		int number = 153;
+		
+		String number_String = Integer.toString(number);
+		
+		int ArmsNo = 0;
+		
+		for (int i=1;i <=number_String.length(); i++) {
+			
+			ArmsNo = number % 10;
+			
+			ArmsNo  = (int) Math.pow(ArmsNo, number_String.length());
+			
+		}
+	}
+
+}

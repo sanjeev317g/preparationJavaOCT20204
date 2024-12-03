@@ -1,0 +1,11 @@
+package practice;
+
+public class InputAndOutPut {
+	
+	public static void main(String args[]) {
+		
+		//Input 1122345566
+		
+	}
+
+}

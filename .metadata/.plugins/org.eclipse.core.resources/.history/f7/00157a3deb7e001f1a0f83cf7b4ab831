@@ -1,0 +1,9 @@
+package practice;
+
+public class OccurencesOfCharactersInString {
+	
+	public static void main(String args[]) {
+		
+	}
+
+}

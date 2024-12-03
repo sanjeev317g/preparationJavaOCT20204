@@ -1,0 +1,10 @@
+package practice;
+
+public class PrimeNumberInRange {
+	
+	public static void main(String args[]) {
+		int n = 29;
+		int m = 0;
+	}
+
+}

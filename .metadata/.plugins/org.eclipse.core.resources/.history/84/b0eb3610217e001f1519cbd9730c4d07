@@ -1,0 +1,15 @@
+package practice;
+
+public class Anagram {
+	
+	public static void main(String args[]) {
+		String str = "Listen";
+		
+		String str1 = str.toLowerCase();// to Lower Case
+		// to Remove space use String Builder to append the character.
+		StringBuilder spaces = new StringBuilder();
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package practice;
+
+public class OutInPut {
+	
+	public static void main(String args[]) {
+		
+		String input = "32400121200";
+		String formattedOutPut = String.format("%011d", Long.parseLong(input));
+		System.out.println(formattedOutPut);
+	}
+
+}

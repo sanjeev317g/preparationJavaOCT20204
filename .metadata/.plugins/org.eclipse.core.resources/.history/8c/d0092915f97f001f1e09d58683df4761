@@ -1,0 +1,31 @@
+package practice5;
+
+public class PrimeRange {
+	
+	public static void main(String args[]) {
+		setPrimeRange()
+	}
+	
+	public static boolean primeFormula(int n) {
+		
+		for(int i=2; i*i <n;i++) {
+			
+			if(n % 2 == 0) {
+				return false;
+			}
+				
+		}
+		return true;
+		
+	
+	}
+	
+	public static void setPrimeRange() {
+		for(int i=3;i<19;i++) {
+			if(primeFormula(i)) {
+				System.out.println(i);
+			}
+		}
+	}
+
+}

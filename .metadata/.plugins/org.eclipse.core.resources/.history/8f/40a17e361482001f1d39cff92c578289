@@ -1,0 +1,26 @@
+package practice2;
+
+public class ReverseEachWordFromString {
+	
+	public static void main(String args[]) {
+		
+		String str = "Java is good programming language";
+		
+		String[] word = str.split(" ");
+		
+		String reverseword = " ";
+		
+		StringBuffer sb = new StringBuffer();
+		
+		for(int i=0;i<=word[i].length();i++) {
+			char[] c = word[i].toCharArray();
+			for(int j=c.length-1; j>=0; j--) {
+				reverseword+=c[j];
+			}
+			sb.append(reverseword + " ");
+			reverseword.
+		}
+		System.out.println(reverseword);
+	}
+
+}

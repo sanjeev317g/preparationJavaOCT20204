@@ -1,0 +1,10 @@
+package com.selenium.StepDefination;
+
+public class Login {
+	
+	@Given("^User is in Login Page$")
+	public void User_is_in_Login_Page() {
+		
+	}
+
+}

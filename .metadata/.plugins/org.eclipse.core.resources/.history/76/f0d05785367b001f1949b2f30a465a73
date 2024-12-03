@@ -1,0 +1,40 @@
+package practice;
+
+public class palindromeNumber {
+	
+	public static void main(String args[]) {
+		
+		String str = "ABBAA";
+		
+		StringBuffer sb = new StringBuffer(str);
+		if(sb.reverse().toString().equals(str)) {
+			System.out.println("its word palindrome");
+		}
+		else {
+			System.out.println("Not palindrome");
+		}
+		
+		palindromNumber()
+		
+	}
+	
+	public static void palindromNumber() {
+		int n = 112211;
+		
+		int reverse = 0 ;
+		
+		while(n != 0) {
+			int digit = n %10;
+			reverse = reverse *10 + digit;
+			n /= 10;
+			
+		}
+		
+		if (n == reverse) {
+			System.out.println("its palindrome");
+		}
+		else
+			System.out.println("Not a palindrone");
+	}
+
+}
